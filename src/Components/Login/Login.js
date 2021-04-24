@@ -47,7 +47,7 @@ function Login() {
                 
                 <form action="">
                     <h5>Email</h5>
-                    <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                    <input type="email" name="email" value={email} onChange={e => setEmail(e.target.value)} />
 
                     <h5>Password</h5>
                     <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
