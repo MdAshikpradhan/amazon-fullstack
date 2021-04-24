@@ -9,18 +9,23 @@ import {
   Link
 } from "react-router-dom";
 import Checkout from './Components/Checkout/Checkout';
+import Login from './Components/Login/Login';
 
 function App() {
   return (
     // BEM
     <Router>
       <div className="App">
-      <Header />
         <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
           <Route path="/checkout">
+            <Header />
             <Checkout />
           </Route>
           <Route path="/">
+            <Header />
             <Home />
           </Route>
         </Switch>
